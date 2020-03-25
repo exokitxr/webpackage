@@ -1,1 +1,1 @@
-parcel build --target browser --no-minify lib/wbn.js --global wbn
+parcel build --target browser --no-minify js/bundle/src/wbn.ts --global wbn
