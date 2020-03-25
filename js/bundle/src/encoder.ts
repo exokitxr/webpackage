@@ -1,8 +1,8 @@
 import * as CBOR from 'cbor';
-import * as fs from 'fs';
+// import * as fs from 'fs';
 import * as mime from 'mime';
 import * as path from 'path';
-import {URL} from 'url';
+// import {URL} from 'url';
 
 declare module 'cbor' {
   // TODO: upstream these to @types/cbor
@@ -70,7 +70,7 @@ export class BundleBuilder {
     return this;
   }
 
-  addFile(url: string, file: string): BundleBuilder {
+  /* addFile(url: string, file: string): BundleBuilder {
     const headers = {
       'Content-Type': mime.getType(file) || 'application/octet-stream',
     };
@@ -99,7 +99,7 @@ export class BundleBuilder {
       }
     }
     return this;
-  }
+  } */
 
   setManifestURL(url: string): BundleBuilder {
     validateExchangeURL(url);
