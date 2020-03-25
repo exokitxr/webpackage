@@ -104,7 +104,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
     // <script>
     } else if (globalName) {
-      this[globalName] = mainExports;
+      globalThis[globalName] = mainExports;
     }
   }
 
@@ -9458,7 +9458,7 @@ var define;
 
     globalObject.BigNumber = BigNumber;
   }
-})(globalThis);
+})(this);
 
 },{}],"ZddA":[function(require,module,exports) {
 'use strict';
