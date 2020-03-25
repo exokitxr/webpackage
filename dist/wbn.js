@@ -104,7 +104,7 @@ var parcelRequire = (function (modules, cache, entry, globalName) {
 
     // <script>
     } else if (globalName) {
-      globalThis[globalName] = mainExports;
+      this[globalName] = mainExports;
     }
   }
 
@@ -117,7 +117,7 @@ var parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"MY8p":[function(require,module,exports) {
+}).call(globalThis, {"MY8p":[function(require,module,exports) {
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
