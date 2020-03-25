@@ -5,7 +5,7 @@
 //
 // anything defined in a previous bundle is accessed via the
 // orig method which is the require for previous bundles
-parcelRequire = (function (modules, cache, entry, globalName) {
+var parcelRequire = (function (modules, cache, entry, globalName) {
   // Save the require from previous bundle to this closure if any
   var previousRequire = typeof parcelRequire === 'function' && parcelRequire;
   var nodeRequire = typeof require === 'function' && require;
@@ -44,7 +44,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
       var module = cache[name] = new newRequire.Module(name);
 
-      modules[name][0].call(module.exports, localRequire, module, module.exports, this);
+      modules[name][0].call(module.exports, localRequire, module, module.exports, globalThis);
     }
 
     return cache[name].exports;
@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"MY8p":[function(require,module,exports) {
+}).call(globalThis, {"MY8p":[function(require,module,exports) {
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
