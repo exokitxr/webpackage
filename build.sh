@@ -1,0 +1,1 @@
+parcel build --target browser --no-minify lib/wbn.js --global wbn
