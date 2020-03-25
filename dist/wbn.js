@@ -9458,7 +9458,7 @@ var define;
 
     globalObject.BigNumber = BigNumber;
   }
-})(this);
+})(globalThis);
 
 },{}],"ZddA":[function(require,module,exports) {
 'use strict';
