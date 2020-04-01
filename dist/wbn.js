@@ -15321,5 +15321,7 @@ exports.Response = decoder_1.Response;
 var encoder_1 = require("./encoder");
 
 exports.BundleBuilder = encoder_1.BundleBuilder;
+
+exports.Buffer = Buffer;
 },{"./decoder":"vywm","./encoder":"Nl8V"}]},{},["NTZa"], "wbn")
 export default module.exports;
